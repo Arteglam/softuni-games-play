@@ -5,9 +5,9 @@ import Home from "./components/home/Home";
 import Login from "./components/login/Login";
 import Register from "./components/register/Register";
 import GameCreate from "./components/game-create/GameCreate";
+import GameCatalog from "./components/game-catalog/GameCatalog";
 
 import "./App.css";
-import GameCatalog from "./components/game-catalog/GameCatalog";
 
 function App() {
   return (
