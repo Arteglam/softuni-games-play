@@ -10,7 +10,7 @@ function App() {
       <Header />
       <main id="main-content">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route index element={<Home />} />
         </Routes>
       </main>
     </div>
