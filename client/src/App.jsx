@@ -1,13 +1,15 @@
 import { Routes, Route } from "react-router";
 
+import "./App.css";
+
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import Login from "./components/login/Login";
 import Register from "./components/register/Register";
 import GameCreate from "./components/game-create/GameCreate";
 import GameCatalog from "./components/game-catalog/GameCatalog";
+import GameDetails from "./components/game-details/GameDetails";
 
-import "./App.css";
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/games" element={<GameCatalog />} />
           <Route path="/games/create" element={<GameCreate />} />
+          <Route path="/games/:gameId/details" element={<GameDetails />} />
           <Route path="/login" element={<Login/>} />
           <Route path="/register" element={<Register />} />
         </Routes>
