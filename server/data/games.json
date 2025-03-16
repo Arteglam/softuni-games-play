@@ -1,0 +1,18 @@
+{
+    "368bd430-0e2e-4984-9c04-8cc22c3bffe9": {
+        "title": "MK3 Ultimate",
+        "category": "Fighting",
+        "maxLevel": "9",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Ultimate_MK3.png/220px-Ultimate_MK3.png",
+        "summary": "Part of the Mortal Kombat series, it is a standalone update of 1995's earlier Mortal Kombat 3 with an altered gameplay system, additional characters like the returning favorites Reptile, Kitana, Jade and Scorpion who were missing from Mortal Kombat 3, and some new features.",
+        "_id": "368bd430-0e2e-4984-9c04-8cc22c3bffe9"
+    },
+    "c74791c3-5277-474c-82fa-88d99c8f74b1": {
+        "title": "Counter-Strike",
+        "category": "FPS",
+        "maxLevel": "100",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/6/67/Counter-Strike_Box.jpg",
+        "summary": "Counter-Strike (CS) is a series of multiplayer tactical first-person shooter video games, in which opposing teams attempt to complete various objectives.",
+        "_id": "c74791c3-5277-474c-82fa-88d99c8f74b1"
+    }
+}
