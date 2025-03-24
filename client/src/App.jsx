@@ -15,8 +15,8 @@ import GameEdit from "./components/game-edit/GameEdit";
 
 function App() {
   const [email, setEmail] = useState('');
-  const userLoginHandler = (email) => {
-    setEmail(email);
+  const userLoginHandler = (authData) => {
+    setEmail(authData.email);
   };
 
   return (
