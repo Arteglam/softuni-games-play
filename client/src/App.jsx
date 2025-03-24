@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router";
+import { useState } from "react";
 
 import "./App.css";
 
@@ -10,7 +11,6 @@ import GameCreate from "./components/game-create/GameCreate";
 import GameCatalog from "./components/game-catalog/GameCatalog";
 import GameDetails from "./components/game-details/GameDetails";
 import GameEdit from "./components/game-edit/GameEdit";
-import { useState } from "react";
 
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
   return (
     <div id="box">
       <Header />
+      
       <main id="main-content">
         <Routes>
           <Route index element={<Home />} />
