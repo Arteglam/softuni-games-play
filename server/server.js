@@ -1649,7 +1649,50 @@
     			_createdOn: 1616237272948,
     			_updatedOn: 1616237293676
     		}
-    	}
+    	},
+        games : [
+            {
+                "title": "MK3 Ultimate",
+                "category": "Fighting",
+                "maxLevel": "8",
+                "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Ultimate_MK3.png/220px-Ultimate_MK3.png",
+                "summary": "Part of the Mortal Kombat series, it is a standalone update of 1995's earlier Mortal Kombat 3 with an altered gameplay system, additional characters like the returning favorites Reptile, Kitana, Jade and Scorpion who were missing from Mortal Kombat 3, and some new features.",
+                "_id": "e133895e-3546-4e3d-9c94-a50bf20668aa",
+                "_createdOn": 1743186816667,
+                "_ownerId": "5f4a3494-335c-47d3-b8d3-44e370955194",
+                "_updatedOn": 1743189629486
+            },
+            {
+                "_ownerId": "5f4a3494-335c-47d3-b8d3-44e370955194",
+                "title": "Counter-Strike",
+                "category": "FPS",
+                "maxLevel": "100",
+                "imageUrl": "https://upload.wikimedia.org/wikipedia/en/6/67/Counter-Strike_Box.jpg",
+                "summary": "Counter-Strike (CS) is a series of multiplayer tactical first-person shooter video games, in which opposing teams attempt to complete various objectives.",
+                "_createdOn": 1743190101997,
+                "_id": "835eba97-5de0-45a6-b33a-1e9e11e4e9e6"
+            },
+            {
+                "_ownerId": "5f4a3494-335c-47d3-b8d3-44e370955194",
+                "title": "Elden Ring",
+                "category": "RPG",
+                "maxLevel": "100",
+                "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_616x353.jpg?t=1739922037",
+                "summary": "Elden Ring is a 2022 action role-playing game developed by FromSoftware. ",
+                "_createdOn": 1743190211583,
+                "_id": "9cd89eaa-f63f-4db8-9723-22f5ce7f2815"
+            },
+            {
+                "_ownerId": "5f4a3494-335c-47d3-b8d3-44e370955194",
+                "title": "Alan Wake 2",
+                "category": "Horror",
+                "maxLevel": "1",
+                "imageUrl": "https://cdn1.epicgames.com/offer/c4763f236d08423eb47b4c3008779c84/EGS_AlanWake2_RemedyEntertainment_S2_1200x1600-c7c8091ddac0f9669c8e5905bca88aaa",
+                "summary": "Alan Wake 2 is a 2023 survival horror video game developed by Remedy Entertainment and published by Epic Games Publishing",
+                "_createdOn": 1743190271548,
+                "_id": "9383e7da-9680-43b5-805b-dc3ba1c586ef"
+            }
+        ]
     };
     var rules$1 = {
     	users: {
