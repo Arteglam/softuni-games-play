@@ -56,8 +56,9 @@ export const useLatestGames = () => {
         const searchParams = new URLSearchParams({
             sortBy: '_createdOn desc',
             pageSize: 3,
+            select: '_id,title,imageUrl',
         });
-        
+
         request.get(`${baseUrl}?${searchParams.toString()}`)
             .then(setLatestGames);
     }, []);
