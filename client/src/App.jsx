@@ -13,10 +13,11 @@ import GameCatalog from "./components/game-catalog/GameCatalog";
 import GameDetails from "./components/game-details/GameDetails";
 import GameEdit from "./components/game-edit/GameEdit";
 import Logout from "./components/logout/Logout";
+import usePersistedState from "./hooks/usePersistedState";
 
 
 function App() {
-  const [authData, setAuthData] = useState({});
+  const [authData, setAuthData] = usePersistedState('auth',{});
   const userLoginHandler = (resultData) => {
     setAuthData(resultData);
   };
