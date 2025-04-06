@@ -1,8 +1,6 @@
 import { Routes, Route } from "react-router";
-import { useState } from "react";
 
 import "./App.css";
-import { UserContext } from "./contexts/UserContext";
 
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
@@ -13,38 +11,30 @@ import GameCatalog from "./components/game-catalog/GameCatalog";
 import GameDetails from "./components/game-details/GameDetails";
 import GameEdit from "./components/game-edit/GameEdit";
 import Logout from "./components/logout/Logout";
-import usePersistedState from "./hooks/usePersistedState";
-
+import UserProvider from "./providers/UserProvider";
+import AuthGuard from "./components/guards/AuthGuardBasic";
 
 function App() {
-  const [authData, setAuthData] = usePersistedState('auth',{});
-  const userLoginHandler = (resultData) => {
-    setAuthData(resultData);
-  };
-
-  const userLogoutHandler = () => {
-    setAuthData({});
-  }
-
   return (
-    <UserContext.Provider value={{...authData, userLoginHandler, userLogoutHandler}}>
-    <div id="box">
-      <Header />
-      
-      <main id="main-content">
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="/games" element={<GameCatalog />} />
-          <Route path="/games/create" element={<GameCreate />} />
-          <Route path="/games/:gameId/details" element={<GameDetails />} />
-          <Route path="/games/:gameId/edit" element={<GameEdit/>} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/logout" element={<Logout />} />
-        </Routes>
-      </main>
-    </div>
-    </UserContext.Provider>
+    <UserProvider>
+      <div id="box">
+        <Header />
+        <main id="main-content">
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="/games" element={<GameCatalog />} />
+            <Route path="/games/:gameId/details" element={<GameDetails />} />
+            <Route element={<AuthGuard />}>
+              <Route path="/games/create" element={<GameCreate />} />
+              <Route path="/games/:gameId/edit" element={<GameEdit />} />
+              <Route path="/logout" element={<Logout />} />
+            </Route>
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+          </Routes>
+        </main>
+      </div>
+    </UserProvider>
   );
 }
 
